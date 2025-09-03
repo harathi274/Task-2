@@ -1,80 +1,40 @@
-# Movie Ratings Data Analysis
+## Workflow Description
 
-## Overview
+This project analyzes a simulated movie ratings dataset using Python within a Jupyter Notebook environment. The key workflow steps are:
 
-This project analyzes a sample dataset of movie ratings using Python (Pandas, NumPy, Matplotlib, Seaborn) in a Jupyter Notebook. The goal is to demonstrate a standard workflow for:
-- Cleaning and preprocessing raw ratings data
-- Calculating summary statistics (mean, median, mode)
-- Visualizing the distribution of ratings (histogram, box plot)
-- Identifying top-rated movies and genres
-- Displaying results in a simple dashboard
+### 1. Import Libraries
+Essential libraries (`pandas`, `numpy`, `random`, `matplotlib`, `seaborn`) are imported for data manipulation, statistical analysis, and visualization.  
+*Purpose:* Enables seamless data engineering and plotting.
 
-## Technologies Used
+### 2. Generate Sample Dataset
+A synthetic dataset of 100 movies is programmatically created, assigning random genres, ratings (1–5), and user IDs for each movie.  
+*Purpose:* Provides a realistic testing ground for the analysis workflow.
 
-- Python (3.7+)
-- Jupyter Notebook
-- Pandas, NumPy, Matplotlib, Seaborn
+### 3. Data Cleaning & Preprocessing
+- Removes duplicate and missing records.
+- Sets genre as a categorical variable for efficient analysis.  
+*Purpose:* Ensures data integrity and analytical accuracy.
 
-## Dataset
+### 4. Calculate Summary Statistics
+- Computes the **mean**, **median**, and **mode** of all movie ratings.  
+*Purpose:* Provides a quick statistical overview of rating trends.
 
-A simulated dataset of 100 movies is generated in the notebook, featuring:
-- `movieId`: Unique integer identifier for each movie
-- `title`: Movie name
-- `genre`: Selected from ['Action', 'Comedy', 'Drama', 'Thriller', 'Romance', 'Horror', 'Sci-Fi', 'Fantasy']
-- `rating`: Random float between 1.0 and 5.0
-- `userId`: Random integer between 1 and 30
+### 5. Visualize Rating Distribution
+- Plots a histogram with a KDE overlay to show frequency and density of ratings.
+- Displays a boxplot to highlight median, interquartile range, and outliers.  
+*Purpose:* Offers visual insights into how movie ratings are distributed.
 
-You may replace this with your own ratings dataset for new analysis.
+### 6. Identify Top-Rated Movies
+- Extracts the top 10 movies based on highest ratings.  
+*Purpose:* Highlights standout titles in the dataset.
 
-## Project Structure
+### 7. Identify Top Genres
+- Calculates average rating per genre and sorts them in descending order.
+- Bar chart visualizes genre performance.  
+*Purpose:* Reveals genre popularity and audience preferences.
 
-```
-├── README.md      # This file
-├── movie_analysis.ipynb  # Jupyter notebook with full code & output
-├── data/          # Optional: Place for external data files (if any)
-```
+### 8. Print Summary Statistics
+- Clearly prints the calculated mean, median, and mode for reference.
 
-## Getting Started
-
-1. **Clone or download the repository**
-2. Open the Jupyter notebook (`movie_analysis.ipynb`)
-3. Run all cells. The notebook creates its own sample data, performs cleaning, calculates statistics, and outputs relevant plots.
-
-### Installation
-
-Make sure you have the following libraries installed:
-```bash
-pip install pandas numpy matplotlib seaborn
-```
-
-### Usage
-
-Open the notebook and execute all cells. For a new dataset, replace the data generation cell with your own CSV import.
-
-## Workflow & Methodology
-
-1. **Data Creation/Import**: Create or load movie ratings data.
-2. **Cleaning**: Remove duplicates, handle missing values, set correct data types.
-3. **Statistics**: Calculate mean, median, and mode of ratings.
-4. **Visualization**: Generate histogram (with KDE) and box plot of ratings.
-5. **Top Insights**: Find top 10 movies by rating, and top genres by average rating.
-6. **Dashboard**: Present findings using visualizations and summary tables.
-
-## Results
-
-- Displayed plots for distribution of ratings.
-- Table of Top 10 rated movies.
-- Bar chart for average rating per genre.
-- Printed summary statistics (mean, median, mode).
-
-All results are visible in the notebook output. Example images and tables are automatically created.
-
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request for bug fixes, enhancements, or new features.
-
-## Acknowledgements
-
-- Inspired by standard data science documentation practices.
-- Libraries: Pandas, NumPy, Matplotlib, Seaborn
-
+### 9. Display Sample Data
+- Shows the first 10 rows of the dataset for a quick glance at movie records.
