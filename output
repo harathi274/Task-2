@@ -1,0 +1,42 @@
+Top 10 Rated Movies:
+    movieId     title     genre  rating
+11       12  Movie 12   Fantasy     4.9
+34       35  Movie 35     Drama     4.9
+50       51  Movie 51     Drama     4.9
+69       70  Movie 70    Horror     4.9
+1         2   Movie 2    Action     4.8
+33       34  Movie 34   Fantasy     4.8
+52       53  Movie 53    Sci-Fi     4.8
+55       56  Movie 56    Horror     4.7
+43       44  Movie 44  Thriller     4.6
+53       54  Movie 54    Horror     4.6
+
+Top Genres by Average Rating:
+genre
+Thriller    3.331250
+Horror      3.078571
+Fantasy     3.046667
+Sci-Fi      2.992857
+Comedy      2.618182
+Action      2.600000
+Drama       2.580000
+Romance     2.322222
+Name: rating, dtype: float64
+
+Summary Statistics:
+Mean Rating: 2.88
+Median Rating: 2.85
+Mode Rating: 2.20
+
+First 10 rows of the sample dataset (for reference):
+   movieId     title     genre  rating  userId
+0        1   Movie 1   Fantasy     2.5       7
+1        2   Movie 2    Action     4.8      17
+2        3   Movie 3     Drama     3.9      20
+3        4   Movie 4  Thriller     3.4      29
+4        5   Movie 5   Fantasy     1.6       4
+5        6   Movie 6     Drama     1.6      30
+6        7   Movie 7    Horror     1.2       5
+7        8   Movie 8    Action     4.5      23
+8        9   Movie 9    Action     3.4       7
+9       10  Movie 10    Comedy     3.8      13
